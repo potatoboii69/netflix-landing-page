@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Header } from './componets/Header';
+import { Section } from './componets/Section';
+import { Footer } from './componets/Footer';
+import { FaqContent } from './componets/FaqContent';
+import { Email } from './componets/Email';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='bg-black'>
+    <Header/>
+    <Section/>
+    <h2 className='text-center text-white my-5'>Frequently Asked Questions</h2>
+    <FaqContent/>
+    <h4 className='my-5 text-center text-white'>Ready to watch? Enter your email to create or restart your membership.</h4>
+    <Footer/>
     </div>
+
+    </>
   );
 }
 

@@ -1,0 +1,139 @@
+.button{
+    background: red;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+}
+.button:hover{
+    background: rgb(126, 42, 42);
+    transition: 0.1s;
+}
+
+.img{
+    width: 200px;
+}
+.img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.img img:hover{
+    transform: rotate(1deg);
+    transition: 0.1s;
+}
+
+#grid-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.list{
+    padding: 10px;
+}
+.list li {
+    list-style: none; ;
+}
+.list a{
+    text-decoration: none;
+    color: gray;
+}
+.list a:hover{
+    text-decoration: underline;
+}
+
+.netflix{
+    color: red;
+    
+}
+.section-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+}
+.section{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.section-text{
+    width: 100%;
+}
+.faq{
+    background: rgb(38, 38, 38);
+    font-size: larger;
+    border: 1px solid rgb(38, 38, 38);
+    border-radius: 5px;
+}
+.l{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    cursor: pointer;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email input{
+    background: none;
+    outline: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.email button{
+    background: red;
+    color: white;
+    transition: 0.1s;
+}
+.email button:hover{
+    background: rgb(126, 42, 42);
+    color: white;
+}
+.claret{
+    width: 50px;
+}
+.claret img{
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+.spin{
+    transform: rotate(180deg);
+    animation-name: spinner;
+    animation-duration: 0.2s;
+}
+.normal{
+    transform: rotate(0deg);
+    animation-name: normalize;
+    animation-duration: 0.2s;
+}
+
+@media (max-width: 500px) {
+    .section{
+        flex-wrap: wrap;
+    }
+}
+@keyframes spinner {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+@keyframes normalize {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
